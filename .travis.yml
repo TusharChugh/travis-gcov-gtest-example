@@ -11,12 +11,12 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
           packages:
-            - g++-6.3
-      env: COMPILER=g++-6.3
+            - g++-6
+      env: COMPILER=g++-6
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y libopencv-dev
+
 script:
   - mkdir build
   - cd build
