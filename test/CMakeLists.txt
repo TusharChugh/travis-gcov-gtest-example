@@ -23,7 +23,7 @@ target_link_libraries(unit_tests_add gtest gtest_main travis_gcov_example_lib pt
 ## manually running the executable runUnitTests to see those specific tests.
 add_test(UnitTests unit_tests_add)
 
-#    set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.travis/cmake)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/.travis/cmake)
 
 if (CMAKE_BUILD_TYPE STREQUAL "Coverage")
     include(CodeCoverage)
