@@ -21,5 +21,7 @@ script:
   - mkdir build
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
-  - cd test
-  - ./unit_tests_add
+  - make test
+
+after_success:
+    - codecov -t 14941eb5-212f-45d2-8f93-b00e31f7ea8f -X gcov
