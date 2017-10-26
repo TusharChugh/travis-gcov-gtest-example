@@ -20,7 +20,7 @@ before_install:
 script:
   - mkdir build
   - cd build
-  - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER -DCMAKE_BUILD_TYPE=ON -DBUILD_TESTS=ON .. && make
   - make test
 
 after_success:
