@@ -4,10 +4,12 @@
 
 Demo for integrating travis CI for continous integration, codecov for code coverage. GTests are used for testing the dummy add class created just for the purpose of demo. 
 
-Language: C++
-Test Framework: gtest
-Code coverage: gcov, codecov.io
-CI Build servers: Travis CI
+Language: C++   
+Compiler: gcc-6
+CMake: 3.5
+Test Framework: gtest   
+Code coverage: gcov, codecov.io  
+CI Build servers: Travis CI  
 
 
 ## Instructions to Run
